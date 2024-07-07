@@ -28,8 +28,8 @@ struct EventsView: View {
             .navigationTitle("Evnets")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button{
-                        //TODO: Navigate to Add Event
+                    NavigationLink {
+                        AddEventView(eventViewModel: viewModel)
                     } label: {
                         Image(systemName: "plus")
                     }

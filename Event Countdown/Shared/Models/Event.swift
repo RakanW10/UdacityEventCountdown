@@ -9,9 +9,9 @@ import SwiftUI
 
 struct Event: Identifiable, Comparable {
     let id = UUID()
-    let title: String
-    let date: Date
-    let textColor: Color
+    var title: String
+    var date: Date
+    var textColor: Color
     
     
     static func < (lhs: Event, rhs: Event) -> Bool { lhs.date < rhs.date }

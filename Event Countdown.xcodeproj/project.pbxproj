@@ -11,6 +11,7 @@
 		4907C56F2C3B0A310038FD97 /* EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907C56E2C3B0A310038FD97 /* EventItem.swift */; };
 		4907C5712C3B0AAE0038FD97 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907C5702C3B0AAE0038FD97 /* EventsView.swift */; };
 		4907C5742C3B0B0D0038FD97 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907C5732C3B0B0D0038FD97 /* EventsViewModel.swift */; };
+		4907C5782C3B0FAE0038FD97 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907C5772C3B0FAE0038FD97 /* AddEventView.swift */; };
 		4936BB732C3ACD9F0071565A /* Event_CountdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936BB722C3ACD9F0071565A /* Event_CountdownApp.swift */; };
 		4936BB772C3ACDA10071565A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4936BB762C3ACDA10071565A /* Assets.xcassets */; };
 		4936BB7A2C3ACDA10071565A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4936BB792C3ACDA10071565A /* Preview Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		4907C56E2C3B0A310038FD97 /* EventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItem.swift; sourceTree = "<group>"; };
 		4907C5702C3B0AAE0038FD97 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		4907C5732C3B0B0D0038FD97 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
+		4907C5772C3B0FAE0038FD97 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 		4936BB6F2C3ACD9F0071565A /* Event Countdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Event Countdown.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4936BB722C3ACD9F0071565A /* Event_CountdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_CountdownApp.swift; sourceTree = "<group>"; };
 		4936BB762C3ACDA10071565A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		4907C5622C3B02280038FD97 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				4907C5792C3B285C0038FD97 /* Edit Event */,
+				4907C5752C3B0F930038FD97 /* Add Event */,
 				4907C5632C3B027D0038FD97 /* Event */,
 			);
 			path = Features;
@@ -58,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				4907C5722C3B0B000038FD97 /* ViewModel */,
-				4907C56C2C3B0A130038FD97 /* Components */,
 				4907C5642C3B02840038FD97 /* View */,
 			);
 			path = Event;
@@ -67,6 +70,7 @@
 		4907C5642C3B02840038FD97 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4907C56C2C3B0A130038FD97 /* Components */,
 				4907C5702C3B0AAE0038FD97 /* EventsView.swift */,
 			);
 			path = View;
@@ -94,6 +98,37 @@
 				4907C5732C3B0B0D0038FD97 /* EventsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4907C5752C3B0F930038FD97 /* Add Event */ = {
+			isa = PBXGroup;
+			children = (
+				4907C5762C3B0F9A0038FD97 /* View */,
+			);
+			path = "Add Event";
+			sourceTree = "<group>";
+		};
+		4907C5762C3B0F9A0038FD97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4907C5772C3B0FAE0038FD97 /* AddEventView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4907C5792C3B285C0038FD97 /* Edit Event */ = {
+			isa = PBXGroup;
+			children = (
+				4907C57A2C3B286B0038FD97 /* Views */,
+			);
+			path = "Edit Event";
+			sourceTree = "<group>";
+		};
+		4907C57A2C3B286B0038FD97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		4936BB662C3ACD9F0071565A = {
@@ -203,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4907C5742C3B0B0D0038FD97 /* EventsViewModel.swift in Sources */,
+				4907C5782C3B0FAE0038FD97 /* AddEventView.swift in Sources */,
 				4936BB732C3ACD9F0071565A /* Event_CountdownApp.swift in Sources */,
 				4907C56B2C3B03A50038FD97 /* Event.swift in Sources */,
 				4907C56F2C3B0A310038FD97 /* EventItem.swift in Sources */,
