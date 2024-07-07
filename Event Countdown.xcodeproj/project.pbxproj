@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4907C5682C3B02A60038FD97 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907C5672C3B02A60038FD97 /* HomeView.swift */; };
 		4936BB732C3ACD9F0071565A /* Event_CountdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936BB722C3ACD9F0071565A /* Event_CountdownApp.swift */; };
-		4936BB752C3ACD9F0071565A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936BB742C3ACD9F0071565A /* ContentView.swift */; };
 		4936BB772C3ACDA10071565A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4936BB762C3ACDA10071565A /* Assets.xcassets */; };
 		4936BB7A2C3ACDA10071565A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4936BB792C3ACDA10071565A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4907C5672C3B02A60038FD97 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4936BB6F2C3ACD9F0071565A /* Event Countdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Event Countdown.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4936BB722C3ACD9F0071565A /* Event_CountdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_CountdownApp.swift; sourceTree = "<group>"; };
-		4936BB742C3ACD9F0071565A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4936BB762C3ACDA10071565A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4936BB792C3ACDA10071565A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4907C5612C3B02220038FD97 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4907C5622C3B02280038FD97 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				4907C5632C3B027D0038FD97 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		4907C5632C3B027D0038FD97 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4907C5642C3B02840038FD97 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4907C5642C3B02840038FD97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4907C5672C3B02A60038FD97 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4936BB662C3ACD9F0071565A = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +82,9 @@
 		4936BB712C3ACD9F0071565A /* Event Countdown */ = {
 			isa = PBXGroup;
 			children = (
+				4907C5612C3B02220038FD97 /* Shared */,
+				4907C5622C3B02280038FD97 /* Features */,
 				4936BB722C3ACD9F0071565A /* Event_CountdownApp.swift */,
-				4936BB742C3ACD9F0071565A /* ContentView.swift */,
 				4936BB762C3ACDA10071565A /* Assets.xcassets */,
 				4936BB782C3ACDA10071565A /* Preview Content */,
 			);
@@ -137,8 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4936BB752C3ACD9F0071565A /* ContentView.swift in Sources */,
 				4936BB732C3ACD9F0071565A /* Event_CountdownApp.swift in Sources */,
+				4907C5682C3B02A60038FD97 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
