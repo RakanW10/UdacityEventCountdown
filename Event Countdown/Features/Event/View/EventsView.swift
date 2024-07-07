@@ -14,7 +14,8 @@ struct EventsView: View {
             List {
                 ForEach(viewModel.events) { event in
                     NavigationLink {
-                        Text("")
+                        EditEventView(eventViewModel: viewModel, event: event)
+                            .navigationTitle("Edit \(event.title)")
                     } label: {
                         EventItem(event: event)
                             .swipeActions {
