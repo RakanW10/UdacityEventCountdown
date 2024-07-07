@@ -8,19 +8,18 @@
 import SwiftUI
 
 struct EventItem: View {
-    let title: String
-    let date: Date
+    let event: Event
     var body: some View {
         VStack (alignment: .leading){
-            Text(title)
+            Text(event.title)
                 .font(.title3)
                 .bold()
-                .foregroundStyle(.red)
-            Text(date, formatter: RelativeDateTimeFormatter())
+                .foregroundStyle(event.textColor)
+            Text(event.date, formatter: RelativeDateTimeFormatter())
         }
     }
 }
 
 #Preview {
-    EventItem(title: "Title", date: .now + 100)
+    EventItem(event: .init(title: "Title", date: .now + 100, textColor: .red))
 }
