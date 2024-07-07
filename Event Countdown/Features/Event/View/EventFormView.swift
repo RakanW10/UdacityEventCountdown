@@ -1,5 +1,5 @@
 //
-//  EditEventView.swift
+//  EventFormView.swift
 //  Event Countdown
 //
 //  Created by Rakan Alotibi on 07/07/2024.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct EditEventView: View {
+struct EventFormView: View {
     @Environment(\.dismiss) var dismiss
-    @ObservedObject var eventViewModel: EventsViewModel
     @State var event: Event = .init(title: "", date: .now, textColor: .blue)
     
+    var onSave: (Event) -> ()
     var body: some View {
         Form {
             Section{
@@ -25,7 +25,7 @@ struct EditEventView: View {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
                     guard !event.title.isEmpty else { return }
-                    eventViewModel.update(event: event)
+                    onSave(event)
                     dismiss()
                 } label: {
                   Image(systemName: "checkmark")
@@ -37,6 +37,8 @@ struct EditEventView: View {
 
 #Preview {
     return NavigationStack {
-        AddEventView(eventViewModel: EventsViewModel())
+        EventFormView(){ e in
+            
+        }
     }
 }

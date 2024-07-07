@@ -14,8 +14,10 @@ struct EventsView: View {
             List {
                 ForEach(viewModel.events) { event in
                     NavigationLink {
-                        EditEventView(eventViewModel: viewModel, event: event)
-                            .navigationTitle("Edit \(event.title)")
+                        EventFormView(event: event){ newEvent in
+                            viewModel.update(event: newEvent)
+                        }
+                        .navigationTitle("Edit \(event.title)")
                     } label: {
                         EventItem(event: event)
                             .swipeActions {
@@ -30,7 +32,10 @@ struct EventsView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink {
-                        AddEventView(eventViewModel: viewModel)
+                        EventFormView(){ newEvent in
+                            viewModel.add(event: newEvent)
+                        }
+                        .navigationTitle("Add Event")
                     } label: {
                         Image(systemName: "plus")
                     }
